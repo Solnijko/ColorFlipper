@@ -45,13 +45,13 @@ body {
 
 #change-btn {
     height: 3.5vh;
+    align-self: center;
+    padding: 4px;
     background-color: #fff;
     border: none;
     font-size: 14pt;
     transition: .3s;
     cursor: pointer;
-    align-self: center;
-    justify-self: end;
     border-bottom: 4px solid #000;
 }
 
