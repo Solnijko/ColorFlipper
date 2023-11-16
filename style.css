@@ -59,3 +59,12 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+.image-container{
+    background: #000;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-top: 20px;
+}
