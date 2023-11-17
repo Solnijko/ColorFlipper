@@ -1,3 +1,5 @@
+import auth from "./config";
+
 const change_btn = document.getElementById("change-btn");
 const main = document.querySelector(".main");
 const hex_code = document.querySelector(".hex-code");
@@ -20,7 +22,7 @@ function getRandomImageByHex(color) {
     // fetch(`https://api.unsplash.com/photos/random?client_id=eABgtWoa5JmvYg6H5QkN9jcB8RQMf5fN9AJY7jj6se4&color:#${hexCode}`)
     fetch(`https://api.unsplash.com/search/photos?query=color ${color}`, {
         headers:{
-            Authorization: "Client-ID eABgtWoa5JmvYg6H5QkN9jcB8RQMf5fN9AJY7jj6se4",
+            Authorization: auth,
             // color: `#${hexCode}`
         }
     })
