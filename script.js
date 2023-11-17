@@ -1,4 +1,4 @@
-import auth from "./config";
+import auth from "./config.js";
 
 const change_btn = document.getElementById("change-btn");
 const main = document.querySelector(".main");
