@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.hidden{
+    display: none;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -10,11 +14,13 @@ body {
 }
 
 .main {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .5s;
+    padding: 10%;
 }
 
 .center {
@@ -44,6 +50,7 @@ body {
 }
 
 #change-btn {
+    margin-bottom: 10%;
     height: 3.5vh;
     align-self: center;
     padding: 4px;
@@ -60,11 +67,10 @@ body {
     color: #fff;
 }
 
-.image-container{
-    background: #000;
-    background-size: contain;
-    width: 150px;
-    height: 150px;
+.missing{
     align-self: center;
-    margin-top: 20px;
+}
+
+.image{
+    border-radius: 3%;
 }
