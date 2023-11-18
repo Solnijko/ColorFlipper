@@ -1,5 +1,4 @@
 import auth from "./config.js";
-
 const change_btn = document.getElementById("change-btn");
 const main = document.querySelector(".main");
 const hex_code = document.querySelector(".hex-code");
@@ -29,10 +28,10 @@ function getImage(color) {
         .then((responseJSON) =>{
             if (responseJSON.results.length != 0){
                 image.src = responseJSON.results[0].urls.small;
-                missing.classList.remove(".hidden")
+                missing.innerHTML = "";
             }
             else{
-                missing.classList.add(".hidden")
+                missing.innerHTML = "No such image found!";
                 image.src = "";
             };
         });   
